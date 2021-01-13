@@ -238,3 +238,6 @@ Description:
 
 Program:
 
+Output:
+
+![image](https://user-images.githubusercontent.com/72337128/104436910-fe5bd100-55af-11eb-9f51-77c3a9631a4b.png)
