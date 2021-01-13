@@ -178,4 +178,9 @@ cv2.imshow("mean of four pictures",meanImg)
 
 cv2.waitKey(0)
 
+Output:
+
+![image](https://user-images.githubusercontent.com/72337128/104435093-cce20600-55ad-11eb-9ab4-f14420d60906.png)
+
+
 
