@@ -139,3 +139,43 @@ Description:
 
 
 
+
+Program:
+
+import cv2
+
+import os
+
+path = 'D:\Pictures'
+
+imgs = []
+
+files = os.listdir(path)
+
+for file in files:
+
+    filepath=path+"\\"+file
+    
+    imgs.append(cv2.imread(filepath))
+    
+i=0
+
+im = []
+
+for im in imgs:
+
+    #cv2.imshow(files[i],imgs[i])
+    
+    im+=imgs[i]
+    
+    i=i+1
+    
+cv2.imshow("sum of four pictures",im)
+
+meanImg = im/len(files)
+
+cv2.imshow("mean of four pictures",meanImg)
+
+cv2.waitKey(0)
+
+
