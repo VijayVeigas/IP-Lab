@@ -77,3 +77,21 @@ Output:
 ![image](https://user-images.githubusercontent.com/72337128/104430924-209e2080-55a9-11eb-9fb1-09282565d634.png)
 
 
+b).Rotation
+
+import cv2 as c
+import numpy as np
+image = c.imread("flow.jpg")
+gray = c.cvtColor(image,c.COLOR_BGR2RGB)
+h,w = image.shape[0:2]
+rotationMatrix = c.getRotationMatrix2D((w/2, h/2), 200, .5)
+rotated_image = c.warpAffine(image,rotationMatrix,(w,h))
+c.imshow("First Lab",rotated_image)
+c.waitKey(0)
+c.destroyAllWindows()
+
+Output:
+
+
+
+
