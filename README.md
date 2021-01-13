@@ -329,3 +329,4 @@ img.show()
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/104438176-8393b580-55b1-11eb-8838-6964ea7db795.png)
