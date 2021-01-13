@@ -230,3 +230,11 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104436152-12530300-55af-11eb-87d0-4bd441d682f4.png)
 
+
+
+5.Develop a program to convert given color image to different color space.
+
+Description:
+
+Program:
+
