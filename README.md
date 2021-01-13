@@ -77,6 +77,7 @@ Output:
 ![image](https://user-images.githubusercontent.com/72337128/104430924-209e2080-55a9-11eb-9fb1-09282565d634.png)
 
 
+
 b).Rotation
 
 import cv2 as c
@@ -93,5 +94,12 @@ c.destroyAllWindows()
 Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104431471-bf2a8180-55a9-11eb-8ed9-69f3e4c85ffe.png)
+
+
+
+3. Develop a program to find the sum and mean of a set of images
+
+Description:
+
 
 
