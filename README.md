@@ -418,25 +418,28 @@ Program:
 
 import numpy as np
 
-axis = 3
+axis = 3  
 
 x =np.empty((axis,axis))
 
 y = np.empty((axis+2,axis+2))
+
+r=np.empty((axis,axis))
 
 s =np.empty((axis,axis))
 
 x = np.array([[1,4,3],[2,8,5],[3,4,6]])
 
 
-'''
+print('Matrix\n')
+
 for i in range(0,axis):
 
     for j in range(0,axis):
     
         print(int(x[i][j]),end = '\t')
         
-    print('\n')'''
+    print('\n')
 
 print('Temp matrix\n')
 
@@ -464,20 +467,34 @@ for i in range(0,axis+2):
     print('\n')
    
    
-print('Output calculated Neigbhors of matrix\n')  
+print('Output calculated Neighbours of matrix\n')
+
+print('sum of Neighbours of matrix\n')
 
 for i in range(0,axis):
 
     for j in range(0,axis):
-    
-        s[i][j]=((y[i][j]+y[i][j+1]+y[i][j+2]+y[i+1][j]+y[i+1][j+2]+y[i+2][j]+y[i+2][j+1]+y[i+2][j+2])/8)
+         
+        r[i][j]=((y[i][j]+y[i][j+1]+y[i][j+2]+y[i+1][j]+y[i+1][j+2]+y[i+2][j]+y[i+2][j+1]+y[i+2][j+2])
         
+        print(r[i][j],end = '\t')
+       
+    print('\n')
+
+print('\n Average of Neighbours of matrix\n')
+
+for i in range(0,axis):
+
+    for j in range(0,axis):
+       
+        s[i][j]=((y[i][j]+y[i][j+1]+y[i][j+2]+y[i+1][j]+y[i+1][j+2]+y[i+2][j]+y[i+2][j+1]+y[i+2][j+2])/8)
+       
         print(s[i][j],end = '\t')
         
     print('\n')
-    
+   
 
 Output:
 
-![image](https://user-images.githubusercontent.com/72337128/104442833-71b51100-55b7-11eb-82bb-82f0226ba73f.png)
+
 
