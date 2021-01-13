@@ -36,6 +36,25 @@ Output:
 2. Develop a program to perform linear transformation on an image.
 
 Description:
+A linear transformation is a function from one vector space to another that respects the underlying structure of each vector space.
 Image scaling refers to the resizing of a digital image.When scaling a vector graphic image, the graphic primitives that make up the image can be scaled using geometric transformations, with no loss of image quality.Rotation is a process of changing the angle of the object. Rotation can be clockwise or anticlockwise.
+
+Program:
+
+a).Scaling
+
+import cv2 as c
+import numpy as np
+image = c.imread('flow.jpg')
+gray = c.cvtColor(image,c.COLOR_BGR2RGB)
+h,w = image.shape[0:2]
+width = int(w * .5)
+height = int(h *.5)
+res = c.resize(image,(width,height))
+c.imshow('First Lab',res)
+c.waitKey(0)
+c.destroyAllWindows()
+
+
 
 
