@@ -318,3 +318,14 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104437928-37e10c00-55b1-11eb-8d1f-acd2f4f23fbd.png)
 
+
+import numpy as np
+from PIL import Image
+array = np.linspace(0,1,256*256)
+mat = np.reshape(array,(256,256))
+img = Image.fromarray( mat , 'HSV')
+img.show()
+
+
+Output:
+
