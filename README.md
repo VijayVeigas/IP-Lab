@@ -320,10 +320,15 @@ Output:
 
 
 import numpy as np
+
 from PIL import Image
+
 array = np.linspace(0,1,256*256)
+
 mat = np.reshape(array,(256,256))
+
 img = Image.fromarray( mat , 'HSV')
+
 img.show()
 
 
