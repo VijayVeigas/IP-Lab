@@ -20,3 +20,7 @@ cv2.imwrite('vijay.jpg',gray_image)
 cv2.imshow ('Grayscale', gray_image)
 cv2.waitKey (0)
 cv2.destroyAllWindows ()
+
+
+Output:
+![image](https://user-images.githubusercontent.com/72337128/104426455-c6e72780-55a3-11eb-8edc-6459dc561c54.png)
