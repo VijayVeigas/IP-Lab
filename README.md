@@ -55,6 +55,7 @@ c.imshow('First Lab',res)
 c.waitKey(0)
 c.destroyAllWindows()
 
-
+Output:
+![image](https://user-images.githubusercontent.com/72337128/104430582-b1283100-55a8-11eb-97ad-0ece225780d2.png)
 
 
