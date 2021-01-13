@@ -51,15 +51,25 @@ Program:
 a).Scaling
 
 import cv2 as c
+
 import numpy as np
+
 image = c.imread('flow.jpg')
+
 gray = c.cvtColor(image,c.COLOR_BGR2RGB)
+
 h,w = image.shape[0:2]
+
 width = int(w * .5)
+
 height = int(h *.5)
+
 res = c.resize(image,(width,height))
+
 c.imshow('First Lab',res)
+
 c.waitKey(0)
+
 c.destroyAllWindows()
 
 Output:
@@ -68,15 +78,25 @@ Output:
 ![image](https://user-images.githubusercontent.com/72337128/104430582-b1283100-55a8-11eb-97ad-0ece225780d2.png)
 
 import cv2 as c
+
 import numpy as np
+
 image = c.imread("flow.jpg")
+
 gray = c.cvtColor(image,c.COLOR_BGR2RGB)
+
 h,w = image.shape[0:2]
+
 width = int(w * 2)
+
 height = int(h *.5)
+
 res = c.resize(image,(width,height))
+
 c.imshow("First Lab",res)
+
 c.waitKey(0)
+
 c.destroyAllWindows()
 
 Output:
@@ -88,14 +108,23 @@ Output:
 b).Rotation
 
 import cv2 as c
+
 import numpy as np
+
 image = c.imread("flow.jpg")
+
 gray = c.cvtColor(image,c.COLOR_BGR2RGB)
+
 h,w = image.shape[0:2]
+
 rotationMatrix = c.getRotationMatrix2D((w/2, h/2), 200, .5)
+
 rotated_image = c.warpAffine(image,rotationMatrix,(w,h))
+
 c.imshow("First Lab",rotated_image)
+
 c.waitKey(0)
+
 c.destroyAllWindows()
 
 Output:
