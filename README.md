@@ -133,6 +133,7 @@ Output:
 
 
 
+
 3. Develop a program to find the sum and mean of a set of images
 
 Description:
@@ -183,4 +184,12 @@ Output:
 ![image](https://user-images.githubusercontent.com/72337128/104435093-cce20600-55ad-11eb-9ab4-f14420d60906.png)
 
 ![image](https://user-images.githubusercontent.com/72337128/104435243-f7cc5a00-55ad-11eb-82f7-c012078ea92e.png)
+
+
+
+4. Convert color image gray scale to binary image
+
+Description:
+
+Program:
 
