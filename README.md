@@ -1,13 +1,13 @@
 # IP-Lab
 
 
-1. Develop a program to display gray scale image using read and write operation.
+# 1. Develop a program to display gray scale image using read and write operation.
 
 Description: Grayscaling is the process of converting an image from other color spaces e.g RGB, CMYK, HSV, etc. to shades of gray. It varies between complete black and complete white.
 
 Binary images are images whose pixels have only two possible intensity values. ... Binary images are often produced by thresholding a grayscale or color image, in order to separate an object in the image from the background. The color of the object (usually white) is referred to as the foreground color. to read an image we use the function cv2.imread(). to save a image we use cv2.imwrite(). to destroy all the windows(). 
 
-program:
+Program:
 
 
 import cv2
@@ -40,7 +40,7 @@ Output:
 
 
 
-2. Develop a program to perform linear transformation on an image.
+# 2. Develop a program to perform linear transformation on an image.
 
 Description:
 A linear transformation is a function from one vector space to another that respects the underlying structure of each vector space.
@@ -48,7 +48,7 @@ Image scaling refers to the resizing of a digital image.When scaling a vector gr
 
 Program:
 
-a).Scaling
+# a).Scaling
 
 import cv2 as c
 
@@ -105,7 +105,7 @@ Output:
 
 
 
-b).Rotation
+# b).Rotation
 
 import cv2 as c
 
@@ -134,7 +134,7 @@ Output:
 
 
 
-3. Develop a program to find the sum and mean of a set of images
+# 3. Develop a program to find the sum and mean of a set of images
 
 
 Description:
@@ -189,7 +189,7 @@ Output:
 
 
 
-4. Convert color image gray scale to binary image
+# 4. Convert color image gray scale to binary image
 
 Description:
 
@@ -243,7 +243,7 @@ Output:
 
 
 
-5.Develop a program to convert given color image to different color space.
+# 5.Develop a program to convert given color image to different color space.
 
 Description:
  A color space is actually a combination of two things: a color model and a mapping function. The reason we want color models is because it helps us in representing pixel values using tuples. The mapping function maps the color model to the set of all possible colors that can be represented.
@@ -293,7 +293,7 @@ Output:
 
 
 
-6. DEVELOP A PROGRAM TO CREATE AN ARRAY FROM 2D ARRAY
+# 6. DEVELOP A PROGRAM TO CREATE AN ARRAY FROM 2D ARRAY
 
 Description:
 Two dimensional array is an array within an array. It is an array of arrays. In this type of array the position of an data element is referred by two indices instead of one. So it represents a table with rows an dcolumns of data. In the below example of a two dimensional array, observer that each array element itself is also an array.
