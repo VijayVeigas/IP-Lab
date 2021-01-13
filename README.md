@@ -429,5 +429,6 @@ for i in range(0,axis):
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/104442833-71b51100-55b7-11eb-82bb-82f0226ba73f.png)
 
 
