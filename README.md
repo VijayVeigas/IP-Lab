@@ -27,3 +27,9 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104426698-188fb200-55a4-11eb-9986-1d4f814278c6.png)
 
+
+
+2. Develop a program to perform linear transformation on an image.
+
+
+
