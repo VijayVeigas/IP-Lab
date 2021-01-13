@@ -136,8 +136,10 @@ Output:
 
 3. Develop a program to find the sum and mean of a set of images
 
+
 Description:
 
+Mean is most basic of all statistical measure. Means are often used in geometry and analysis; a wide range of means have been developed for these purposes. In contest of image processing filtering using mean is classified as spatial filtering and used for noise reduction.
 
 
 
@@ -191,6 +193,15 @@ Output:
 
 Description:
 
+A gray scale image has a certain number (probably 8) bits of information per pixel, hence, 256 possible grey values. Of course, a grey scale image has a binary representation, but the smallest size of information is not a bit, so we don't call it a binary image.
+A binary image is the type of image where each pixel is black or white. You can also say the pixels as 0 or 1 value. Here 0 represents black and 1 represents a white pixel.
+
+Approach:
+
+1.Read the image from the location.
+2.As a colored image has RGB layers in it and is more complex, convert it to its Grayscale form first.
+3.Set up a Threshold mark, pixels above the given mark will turn white, and below the mark will turn black.
+
 Program:
 
 import cv2
@@ -235,6 +246,9 @@ Output:
 5.Develop a program to convert given color image to different color space.
 
 Description:
+ A color space is actually a combination of two things: a color model and a mapping function. The reason we want color models is because it helps us in representing pixel values using tuples. The mapping function maps the color model to the set of all possible colors that can be represented.
+There are many different color spaces that are useful. Some of the more popular color spaces are RGB, YUV, HSV. Different color spaces provide different advantages.
+
 
 Program:
 
@@ -282,6 +296,7 @@ Output:
 6. DEVELOP A PROGRAM TO CREATE AN ARRAY FROM 2D ARRAY
 
 Description:
+Two dimensional array is an array within an array. It is an array of arrays. In this type of array the position of an data element is referred by two indices instead of one. So it represents a table with rows an dcolumns of data. In the below example of a two dimensional array, observer that each array element itself is also an array.
 
 Program:
 
