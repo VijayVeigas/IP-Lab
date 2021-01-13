@@ -218,7 +218,15 @@ cv2.destroyAllWindows()
 
 Output:
 
+*Normal Image*
+
 ![image](https://user-images.githubusercontent.com/72337128/104435811-a375aa00-55ae-11eb-9b79-ab69221a17c9.png)
 
+*Gray scale image*
 
 ![image](https://user-images.githubusercontent.com/72337128/104436022-e9327280-55ae-11eb-926e-6de65cae8301.png)
+
+*Binary image*
+
+![image](https://user-images.githubusercontent.com/72337128/104436152-12530300-55af-11eb-87d0-4bd441d682f4.png)
+
