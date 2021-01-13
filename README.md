@@ -238,6 +238,37 @@ Description:
 
 Program:
 
+import cv2
+
+image=cv2.imread('cat1.jpg')
+
+cv2.imshow('pic',image)
+
+cv2.waitKey(0)
+
+yuv_img = cv2.cvtColor(image,cv2.COLOR_RGB2YUV)
+
+cv2.imshow('ychannel',yuv_img[:,:,0])
+
+cv2.imshow('uchannel',yuv_img[:,:,1])
+
+cv2.imshow('vchannel',yuv_img[:,:,2])
+
+cv2.waitKey(0)
+
+hsv_img = cv2.cvtColor(image,cv2.COLOR_RGB2HSV)
+
+cv2.imshow('hchannel',hsv_img[:,:,0])
+
+cv2.imshow('schannel',hsv_img[:,:,1])
+
+cv2.imshow('vchannel',hsv_img[:,:,2])
+
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
+
+
 Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104436910-fe5bd100-55af-11eb-9f51-77c3a9631a4b.png)
