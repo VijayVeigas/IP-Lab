@@ -193,3 +193,30 @@ Description:
 
 Program:
 
+import cv2
+
+img = cv2.imread('cat.jpg')
+
+cv2.imshow('Input',img)
+
+cv2.waitKey(0)
+
+grayimg=cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+cv2.imshow('Grayscaleimage',grayimg)
+
+cv2.waitKey(0)
+
+ret, bw_img = cv2.threshold(img,127,255, cv2.THRESH_BINARY)
+
+cv2.imshow("Binary Image",bw_img)
+
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
+
+
+Output:
+
+![image](https://user-images.githubusercontent.com/72337128/104435811-a375aa00-55ae-11eb-9b79-ab69221a17c9.png)
+
