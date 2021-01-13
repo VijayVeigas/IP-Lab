@@ -407,7 +407,7 @@ for i in range(0,axis+2):
 
 Output:
 
-
+![image](https://user-images.githubusercontent.com/72337128/104445093-8646d880-55ba-11eb-94d5-ba46ef557fd6.png)
 
 
 # 8.Calculate the Neighborhood of Matrix.
