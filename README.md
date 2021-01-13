@@ -74,4 +74,6 @@ c.destroyAllWindows()
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/104430924-209e2080-55a9-11eb-9fb1-09282565d634.png)
+
 
