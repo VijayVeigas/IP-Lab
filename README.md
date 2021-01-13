@@ -350,3 +350,84 @@ img.show()
 Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/104438176-8393b580-55b1-11eb-8838-6964ea7db795.png)
+
+
+# 7. Find the neighborhood matrix.
+
+Description:
+
+Program:
+
+
+
+# 8.Calculate the Neighborhood of Matrix.
+
+Description:
+
+Program:
+
+import numpy as np
+
+axis = 3
+
+x =np.empty((axis,axis))
+
+y = np.empty((axis+2,axis+2))
+
+s =np.empty((axis,axis))
+
+x = np.array([[1,4,3],[2,8,5],[3,4,6]])
+
+
+'''
+for i in range(0,axis):
+
+    for j in range(0,axis):
+    
+        print(int(x[i][j]),end = '\t')
+        
+    print('\n')'''
+
+print('Temp matrix\n')
+
+for i in range(0,axis+2):
+
+    for j in range(0,axis+2):
+    
+        if i == 0 or i == axis+1 or j == 0 or j==axis+1:
+        
+            y[i][j]=0
+            
+        else:
+        
+            #print("i = {}, J = {}".format(i,j))
+            
+            y[i][j]=x[i-1][j-1]
+           
+
+for i in range(0,axis+2):
+
+    for j in range(0,axis+2):
+    
+        print(int(y[i][j]),end = '\t')
+        
+    print('\n')
+   
+   
+print('Output calculated Neigbhors of matrix\n')  
+
+for i in range(0,axis):
+
+    for j in range(0,axis):
+    
+        s[i][j]=((y[i][j]+y[i][j+1]+y[i][j+2]+y[i+1][j]+y[i+1][j+2]+y[i+2][j]+y[i+2][j+1]+y[i+2][j+2])/8)
+        
+        print(s[i][j],end = '\t')
+        
+    print('\n')
+    
+
+Output:
+
+
+
