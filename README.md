@@ -276,3 +276,43 @@ Output:
 ![image](https://user-images.githubusercontent.com/72337128/104437261-5e527780-55b0-11eb-9128-887f9fe692b1.png)
 
 ![image](https://user-images.githubusercontent.com/72337128/104437454-95288d80-55b0-11eb-8d55-47a5cfcf06eb.png)
+
+
+
+6. DEVELOP A PROGRAM TO CREATE AN ARRAY FROM 2D ARRAY
+
+Description:
+
+Program:
+
+import numpy as np
+
+from PIL import Image
+
+import cv2
+
+array = np.linspace(0,1,256*256)
+
+mat = np.reshape(array,(256,256))
+
+img = Image.fromarray(np.uint8(mat * 255) , 'L')
+
+img.show()
+
+cv2.waitKey(0)
+
+array = np.linspace(0,1,256*256)
+
+
+mat = np.reshape(array,(256,256))
+
+
+img = Image.fromarray( mat , 'L')
+
+img.show()
+
+cv2.waitKey(0)
+
+
+Output:
+
