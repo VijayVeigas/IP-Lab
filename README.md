@@ -35,5 +35,7 @@ Output:
 
 2. Develop a program to perform linear transformation on an image.
 
+Description:
+Image scaling refers to the resizing of a digital image.When scaling a vector graphic image, the graphic primitives that make up the image can be scaled using geometric transformations, with no loss of image quality.Rotation is a process of changing the angle of the object. Rotation can be clockwise or anticlockwise.
 
 
