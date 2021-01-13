@@ -11,7 +11,7 @@ program:
 
 
 import cv2
-image = cv2.imread ('baby.jpg')
+image = cv2.imread ('flower.jpg')
 cv2.imshow ('Original', image)
 cv2.waitKey ()
 
@@ -23,9 +23,7 @@ cv2.destroyAllWindows ()
 
 
 Output:
-![image](https://user-images.githubusercontent.com/72337128/104426455-c6e72780-55a3-11eb-8edc-6459dc561c54.png)
 
-![image](https://user-images.githubusercontent.com/72337128/104426698-188fb200-55a4-11eb-9986-1d4f814278c6.png)
 
 
 
