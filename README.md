@@ -300,56 +300,26 @@ Two dimensional array is an array within an array. It is an array of arrays. In 
 
 Program:
 
-import numpy as np
+import numpy,cv2 
 
-from PIL import Image
+img=numpy.zeros([200,200,3])
 
-import cv2
+img[:,:,0]=numpy.ones([200,200])*255
 
-array = np.linspace(0,1,256*256)
+img[:,:,1]=numpy.ones([200,200])*255 
 
-mat = np.reshape(array,(256,256))
+img[:,:,2]=numpy.ones([200,200])*0
 
-img = Image.fromarray(np.uint8(mat * 255) , 'L')
+cv2.imwrite('flow1.jpg',img)
 
-img.show()
+cv2.imshow('Color image',img)
 
-cv2.waitKey(0)
+cv2.waitKey(0) 
 
-array = np.linspace(0,1,256*256)
-
-
-mat = np.reshape(array,(256,256))
-
-
-img = Image.fromarray( mat , 'L')
-
-img.show()
-
-cv2.waitKey(0)
-
+cv2.destroyAllWindows()
 
 Output:
 
-![image](https://user-images.githubusercontent.com/72337128/104437928-37e10c00-55b1-11eb-8d1f-acd2f4f23fbd.png)
-
-
-import numpy as np
-
-from PIL import Image
-
-array = np.linspace(0,1,256*256)
-
-mat = np.reshape(array,(256,256))
-
-img = Image.fromarray( mat , 'HSV')
-
-img.show()
-
-
-Output:
-
-![image](https://user-images.githubusercontent.com/72337128/104438176-8393b580-55b1-11eb-8838-6964ea7db795.png)
 
 
 # 7. Find the neighborhood matrix.
