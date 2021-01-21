@@ -320,6 +320,7 @@ cv2.destroyAllWindows()
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/105331316-22916080-5bf5-11eb-8237-97de676847af.png)
 
 
 # 7. Find the neighborhood matrix.
@@ -480,6 +481,9 @@ Output:
 
 Description:
 
+Enhancing an image provides better contrast and a more detailed image as compare to non enhanced image. Image enhancement has very applications. It is used to enhance medical images, images captured in remote sensing, images from satellite e.t.c
+The second linear transformation is negative transformation, which is invert of identity transformation. In negative transformation, each value of the input image is subtracted from the L-1 and mapped onto the output image.
+
 Program:
 
 import cv2 
@@ -507,6 +511,8 @@ Output:
 
 Description:
 
+Contrast can be simply explained as the difference between maximum and minimum pixel intensity in an image.
+
 Program:
 
 from PIL import Image, ImageEnhance
@@ -529,6 +535,9 @@ Output:
 # Thresholding Brightness
 
 Description:
+
+Brightness is a relative term. It depends on your visual perception. Since brightness is a relative term, so brightness can be defined as the amount of energy output by a source of light relative to the source we are comparing it to. In some cases we can easily say that the image is bright, and in some cases, its not easy to perceive.
+
 
 Program:
 
@@ -569,10 +578,11 @@ if cv2.waitKey(0) & 0xff == 27:
  ![image](https://user-images.githubusercontent.com/72337128/105329213-b7df2580-5bf2-11eb-955f-f5608d8c751e.png)
 
 
-# 10.Develop a program to imolement Power Law Transformation.
+# 10.Develop a program to implement Power Law Transformation.
 
 Description:
 
+A variety of devices used for image capture, printing and display respond according to a power law. The exponent in the power law equation is referred to as gamma. The process is used to correct these power-law response phenomena is called gamma correction.Gamma correction is important if it is displaying an image an image accurately on a computer screen is of concern. Images that are not corrected properly can look either bleached out, or what is more likely too dark.
 
 Program:
 
@@ -596,3 +606,19 @@ Output:
 
 ![image](https://user-images.githubusercontent.com/72337128/105329951-8c106f80-5bf3-11eb-8ec2-39c553b21ae8.png)
 
+
+# 11.Develop a program to display Histogram of an image.
+
+Description:
+
+A histogram is a graph. A graph that shows frequency of anything. Usually histogram have bars that represent frequency of occurring of data in the whole data set.
+A Histogram has two axis the x axis and the y axis.
+The x axis contains event whose frequency you have to count.
+The y axis contains frequency.
+The different heights of bar shows different frequency of occurrence of data.
+
+Histogram of an image, like other histograms also shows frequency. But an image histogram, shows frequency of pixels intensity values. In an image histogram, the x axis shows the gray level intensities and the y axis shows the frequency of these intensities.
+
+Program:
+
+Output:
