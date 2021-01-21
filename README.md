@@ -513,11 +513,13 @@ Description:
 Program:
 
 import cv2 
+
 import matplotlib.pyplot as plt  
   
 img_orgn = cv2.imread('cat1.jpg', 1) 
   
 plt.imshow(img_orgn) 
+
 plt.show() 
 
 img_neg = 255 - img_orgn 
@@ -525,4 +527,27 @@ img_neg = 255 - img_orgn
 plt.imshow(img_neg) 
 
 plt.show() 
+
+Output:
+
+![image](https://user-images.githubusercontent.com/72337128/105327489-c0366100-5bf0-11eb-9bea-43ea76aacc54.png)
+
+
+# Contrast an Image
+
+Description:
+
+Program:
+
+from PIL import Image, ImageEnhance
+
+img = Image.open("cat.jpg")
+
+img.show()
+
+img=ImageEnhance.Color(img)
+
+img.enhance(2.0).show()
+
+Output:
 
