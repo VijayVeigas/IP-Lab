@@ -637,8 +637,97 @@ Output:
 
 
 # 12.Program to enhance image using Arithmetic and logic operations.
+
+Description:
+
+# Blending:
+
 Description:
 
 Program:
+
+import cv2
+
+import numpy as np
+
+image1=cv2.imread('flw1.jpg')
+
+image2=cv2.imread('flw2.jpg')
+
+weightedSum=cv2.addWeighted(image1,0.7,image2,0.7,0)
+
+cv2.imshow('Weighted Image',weightedSum)
+           
+cv2.waitKey(0)  
+
+cv2.destroyAllWindows()
+
 Output:
 
+
+# Addition:
+
+Description:
+
+Program:
+
+import cv2  
+
+import numpy as np
+
+image1 = cv2.imread('flw1.jpg',1)
+
+image2 = cv2.imread('flw2.jpg')
+
+image3=cv2.add(image1,image2)
+
+added=cv2.hconcat([image1,image2,image3])
+
+cv2.imshow('Addition Image',added)
+
+cv2.waitKey(0)  
+
+cv2.destroyAllWindows()
+
+Output:
+
+![image](https://user-images.githubusercontent.com/72337128/105341590-1a3f2280-5c01-11eb-9377-9f65faff964c.png)
+
+
+# Logical Operations:
+
+Description:
+
+Program:
+
+ import cv2
+ 
+image1 = cv2.imread('flw1.jpg',1) 
+
+image2 = cv2.imread('flw2.jpg')
+
+bitwiseAnd = cv2.bitwise_and(image1,image2)
+
+bitwiseOr = cv2.bitwise_or(image1,image2)
+
+bitwiseXor = cv2.bitwise_xor(image1,image2)
+
+bitwiseNot_img1 = cv2.bitwise_not(image1)
+
+bitwiseNot_img2 = cv2.bitwise_not(image2)
+
+cv2.imshow('and',bitwiseAnd)
+
+cv2.imshow('or',bitwiseOr)
+
+cv2.imshow('xor',bitwiseXor)
+
+cv2.imshow('notimage1',bitwiseNot_img1)
+
+cv2.imshow('notimage2',bitwiseNot_img2)
+
+cv2.waitKey(0)  
+
+cv2.destroyAllWindows() 
+
+Output:
