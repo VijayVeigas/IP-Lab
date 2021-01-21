@@ -506,3 +506,23 @@ Output:
 
 
 
+# 9.Develop a program to implement Negative Transformation of an image.
+
+Description:
+
+Program:
+
+import cv2 
+import matplotlib.pyplot as plt  
+  
+img_orgn = cv2.imread('cat1.jpg', 1) 
+  
+plt.imshow(img_orgn) 
+plt.show() 
+
+img_neg = 255 - img_orgn 
+  
+plt.imshow(img_neg) 
+
+plt.show() 
+
