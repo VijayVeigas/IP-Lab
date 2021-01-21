@@ -596,4 +596,30 @@ if cv2.waitKey(0) & 0xff == 27:
  
  Output:
  
- 
+ ![image](https://user-images.githubusercontent.com/72337128/105329213-b7df2580-5bf2-11eb-955f-f5608d8c751e.png)
+
+
+# 10.Develop a program to imolement Power Law Transformation.
+
+Description:
+
+
+Program:
+
+import numpy as np
+
+import cv2
+
+img = cv2.imread('cat.jpg')
+
+gamma_two_point_two = np.array(230*(img/255)**2.1,dtype='uint8')
+
+gamma_point_four = np.array(255*(img/255)**0.1,dtype='uint8')
+
+img3 = cv2.hconcat([gamma_two_point_two,gamma_point_four])
+
+cv2.imshow('a2',img3)
+
+cv2.waitKey(0)
+
+Output:
