@@ -621,4 +621,18 @@ Histogram of an image, like other histograms also shows frequency. But an image 
 
 Program:
 
+import cv2 
+
+from matplotlib import pyplot as plt 
+
+img = cv2.imread('flow1.jpg',0) 
+  
+plt.hist(img.ravel(),256,[0,256])
+
+plt.show()
+
 Output:
+
+
+
+# 12.
