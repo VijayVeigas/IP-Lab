@@ -633,6 +633,7 @@ plt.show()
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/105335253-a6e5e280-5bf9-11eb-98b6-62332e3b2844.png)
 
 
 # 12.
