@@ -551,3 +551,7 @@ img.enhance(2.0).show()
 
 Output:
 
+![image](https://user-images.githubusercontent.com/72337128/105328020-6aae8400-5bf1-11eb-9486-394f189c1a9b.png)
+
+![image](https://user-images.githubusercontent.com/72337128/105328069-77cb7300-5bf1-11eb-9841-bddd326f8b32.png)
+
