@@ -623,3 +623,6 @@ cv2.imshow('a2',img3)
 cv2.waitKey(0)
 
 Output:
+
+![image](https://user-images.githubusercontent.com/72337128/105329951-8c106f80-5bf3-11eb-8ec2-39c553b21ae8.png)
+
