@@ -664,6 +664,31 @@ cv2.destroyAllWindows()
 
 Output:
 
+# Subtraction
+
+Description:
+
+Program:
+
+import cv2   
+
+import numpy as np  
+
+image1 = cv2.imread('flw1.jpg')  
+
+image2 = cv2.imread('flw2.jpg')
+
+sub = cv2.subtract(image1, image2)
+
+added=cv2.hconcat([image1,image2,sub])
+
+cv2.imshow('Subtracted Image', added)
+ 
+cv2.waitKey(0)  
+
+cv2.destroyAllWindows()
+
+Output:
 
 # Addition:
 
